@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora Diseño</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@501&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/b7073b5a0e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <img class="logo" src="img\logo_diseño.jpg">
+    <div class="ancho">Ancho mm</div>
+    <div class="alto">Alto mm</div>
+    <input type="number" class="input-ancho" oninput="cuenta()" autofocus>
+    <input type="number" class="input-alto" oninput="cuenta()">
+    <select contenteditable="true" class="select">
+        <option hidden selected>Tela:</option>
+        <option value="polo">Polo</option>
+        <option value="yuma5">Yuma 5%</option>
+        <option value="yuma10">Yuma 10%</option>
+        <option value="duna">Duna</option>
+        <option value="trama5">Trama 5%</option>
+        <option value="panama1">Panama 1%</option>
+        <option value="panama5">Panama 5%</option>
+        <option value="panama10">Panama 10%</option>
+        <option value="cuyo">Cuyo</option>
+        <option value="haya">Haya</option>
+        <option value="inca">Inca</option>
+        <option value="incabo">Inca BO</option>
+        <option value="morabo">Mora BO</option>
+        <option value="paris_perla">Paris - Perla</option>
+        <option value="raices">Raices</option>
+        <option value="rio">Rio</option>
+        <option value="batten">Batten</option>
+    </select>
+    <div class="tapon">
+        <div class="text">
+            <i class="fas fa-dollar-sign dolar"></i>
+            <div class="in-text">DOLAR:</div>
+            <div class="in-text" id="dolar">$</div>
+        </div>
+        <div class="text">
+            <i class="fas fa-clipboard-list lista"></i>
+            <div class="in-text">LISTA:</div>
+            <div class="in-text" id="lista">$</div>
+        </div>
+        <div class="text">
+            <i class="fab fa-cc-visa cuotas"></i>
+            <div class="in-text">3 CUOTAS DE:</div>
+            <div class="in-text" id="cuotas">$</div>
+        </div>
+        <div class="text">
+            <i class="fas fa-money-bill-wave contado"></i>
+            <div class="in-text">CONTADO:</div>
+            <div class="in-text" id="contado">$</div>
+        </div>
+    </div>
+    <div class="ajustes" onclick="cambioDolar()">
+        <i class="fas fa-tools"></i>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
